@@ -2,24 +2,29 @@
 
 
 <div class="container pb-5">
+    <div class="row">
 
-    <div class="mt-5">
+		<div class="col-9">
+                <h1 class="title"><?php the_title();?></h1>
 
-        <h1><?php the_title();?></h1>
+                <?php if(has_post_thumbnail()):?>
 
-        <?php if(has_post_thumbnail()):?>
+                    <img src="<?php the_post_thumbnail_url('smallest');?>" class="img-fluid p-5">
 
-            <img src="<?php the_post_thumbnail_url('smallest');?>" class="img-fluid">
+                <?php endif;?>
 
-        <?php endif;?>
+                <?php if (have_posts()) : while(have_posts()) : the_post();?>
 
-        <?php if (have_posts()) : while(have_posts()) : the_post();?>
+                    <?php the_content();?>
 
-        <?php the_content();?>
+                <?php endwhile; endif;?>
+        </div>
 
-        <?php endwhile; endif;?>
+        <div class="col-3">
+            <?php get_sidebar(); ?>
+        </div>
+
     </div>
-
 </div>
 
 <?php get_footer();?>

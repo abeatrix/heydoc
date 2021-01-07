@@ -1,0 +1,111 @@
+/*
+Theme Name: heydoc
+Author: Beatrix Woo
+Website: https://bwoo.dev
+*/
+
+body {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nevigation {
+    background-color: white;
+    color: #2F2E42
+}
+
+li {
+    float: left;
+    color: #2F2E42
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    color: #2F2E42
+}
+
+li a:active li a:hover{
+    color: #2F2E42
+}
+
+.nav-logo {
+    color: #2F2E42;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.nav-logo-dot{
+    color: #358864;
+}
+
+.max {
+    max-width: 1000px;
+}
+
+.title {
+    color:  #314DC3;
+}
+
+.header-height{
+    height: 500px;
+    color:  #314DC3;
+}
+
+.header-img {
+    background: url(images/doc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 15px 50px 30px;
+    margin: 0 auto;
+    height: 100%;
+    width: 400px;
+}
+
+.section-container {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+.section-container-dark {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    width: 100%;
+    color: white;
+}
+
+.section-container-lightblue {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background: #B8C9E7;
+    width: 100%;
+    color: white;
+}
+
+.section-wrapper {
+    background-size: cover;
+    color: white;
+}
+
+.section-title {
+    color: #314DC3;
+}
+
+.footer-container {
+    background: #B8C9E7;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #314DC3;
+}
